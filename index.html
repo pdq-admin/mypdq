@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>星际论坛</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>星际论坛</h1>
+      <p>欢迎来到未来世界</p>
+    </header>
+
+    <main>
+      <section class="post-form">
+        <h2>发表新帖</h2>
+        <form id="postForm">
+          <input type="text" id="title" placeholder="标题" required>
+          <textarea id="content" placeholder="内容..." required></textarea>
+          <button type="submit">发布</button>
+        </form>
+      </section>
+
+      <section class="posts">
+        <h2>最新帖子</h2>
+        <div id="postList">
+          <!-- 帖子将动态插入到这里 -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
